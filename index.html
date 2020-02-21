@@ -4,23 +4,87 @@
     <script src="main.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address Book</title>
+    <title>Date ❤ Book</title>
 </head>
 <style>
+body {
+    background-color: #f2eddb;
+}
 #pics {
-    width:80%;
+    width:70%;
     float:left;
-    margin:0px;
+    margin:0 0 0 40px;
     vertical-align: top;
     font-size: 0;
+    clear: both;
 }
-#data{
+#rightPanel{
     width:19%;
     float: left;
+    color: #f151a1;
+    vertical-align: top;
+    overflow-wrap: break-word;
+    position: fixed;
+    top: 20px;
+    left: 75%;
 }
+#blueText {
+    color: rgb(104, 106, 228);
+}
+#header {
+    vertical-align:middle;
+    display: inline-block;
+    height: 105px;
+    float: left;
+    }
+   
+#footer {
+  width:100%;
+  font-family: Tahoma;
+  font-size: 10pt;
+  text-align: left;
+  color: #5007fc;
+  clear: both;
+  padding-top: 10px;
+}   
 </style>
 <body>
+    <div id="header"><img src="HackBook.png" style="float: left;height:100px" />
+    <div style="float: left;">
+    <select style="margin-top: 50px;">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option selected="true">Any Gender</option>
+    </select>
+    <select class = "nat" style="margin-top: 50px;">
+        <option value="au">Australia</option>
+        <option value="br">Brazil</option>
+        <option value="ca">Canada</option>
+        <option value="ch">Switzerland</option>
+        <option value="de">Germany</option>
+        <option value="dk">Denmark</option>
+        <option value="es">Spain</option>
+        <option value="fi">Finland</option>
+        <option value="fr">France</option>
+        <option value="gb">Great Britain</option>
+        <option value="ie">Ireland</option>
+        <option value="ir">Iran</option>
+        <option value="no">Norway</option>
+        <option value="nl">Netherlands</option>
+        <option value="nz">New Zealand</option>
+        <option value="tr">Turkey</option>
+        <option value="us">United States</option>
+        <option selected="true">Any Country</option>
+    </select>
+    <input type="button" onclick="window.location.href=window.location.href" value="Reset All"/>
+    </div>
+    </div>
     <div id="pics"></div>
+    <div class = "Fixed" id="rightPanel">
     <div id="data"></div>
+    </div>
+    <div id="footer"><img src="../favicon.ico" style="width:16px;height:16px;" /> HackBook - 2020 crazyhappyfuntime.com => Austin Coding Academy (data courtesy of randomuser.me)</div>
+     
+
 </body>
 </html>
